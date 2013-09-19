@@ -36,7 +36,7 @@ $(document).ajaxComplete(function(){
   function showresult() {
     $("#result").show();
   }
-  var progresstypes=["Calculating Verbs","Reverse Polarity","Myers-Briggs Analysis","Reticulating Splines"];
+  var progresstypes=["Noun sentiment discovery","Cultural reference point derivation","Myers-Briggs Type approximation","Reticulating splines"];
 
   var x = 0
 

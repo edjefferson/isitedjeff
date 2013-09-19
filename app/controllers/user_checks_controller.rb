@@ -8,10 +8,11 @@ class UserChecksController < ApplicationController
       @user_check.score = (0..15).to_a.sample
       @user_check.save
     end
+    @user_check.check_count += 1
 
     respond_to do |format|
       format.html
-      format.js
+      format.js {}
     end
 
   end
