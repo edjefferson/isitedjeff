@@ -6,6 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
+/.env
 
 /config/database.yml
 
@@ -16,3 +17,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+
+git filter-branch --force --index-filter \
+  'git rm --cached --ignore-unmatch config/database.yml' \
+  --prune-empty --tag-name-filter cat -- --all
