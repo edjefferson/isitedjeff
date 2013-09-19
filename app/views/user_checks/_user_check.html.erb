@@ -1,0 +1,27 @@
+<%if @user_check.name != "" && @user_check.name != nil%>
+  
+  <div id="progressbar0"><div class="progress-label0">Tests in progress...</div></div>
+  <br />
+  <div id="progressbar1"><div class="progress-label1">Tests in progress...</div></div>
+  <br />
+  <div id="progressbar2"><div class="progress-label2">Tests in progress...</div></div>
+  <br />
+  <div id="progressbar3"><div class="progress-label3">Tests in progress...</div>
+
+</div>
+<br />
+
+
+  <div id="result">
+  <%if @user_check.score < 50 %>
+    <h1>Unlikely.</h1>
+    <p>
+    There is a less than
+  <% else %>
+    <h1>Probably.</h1>
+    <p>
+    There is a 
+  <% end %>
+  <%= @user_check.score %>% chance that <a href="http://www.twitter.com/<%= @user_check.name %>">@<%= @user_check.name %></a> is <a href="http://www.twitter.com/edjeff/">@edjeff</a>.</p>
+  </div>
+<% end %>
