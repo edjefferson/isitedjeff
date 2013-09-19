@@ -76,7 +76,7 @@ Isitedjeff::Application.configure do
   # config.autoflush_log = false
 
   # replace this with your tracker code
-  GA.tracker = ENV[GATRACKINGID]
+  GA.tracker = ENV['GATRACKINGID']
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
