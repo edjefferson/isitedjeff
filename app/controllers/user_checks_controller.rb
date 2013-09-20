@@ -3,7 +3,7 @@ class UserChecksController < ApplicationController
 
 
   def search
-    name_to_check = params[:q] || ""
+    name_to_check = params[:q].downcase || ""
     if name_to_check[0] == "@"
       name_to_check = name_to_check[1..-1]
     end
