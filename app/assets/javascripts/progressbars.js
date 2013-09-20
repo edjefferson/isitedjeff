@@ -2,10 +2,6 @@ $(document).ajaxComplete(function(){
     var progresstypes=["Calculating average noun sentiment","Deriving cultural reference points","Approximating Myers-Briggs Type","Reticulating splines","Partitioning hashtags","Applying colloquial filters","Assaying content","Dissecting social network pathways","Folding retweets","Segmenting pork statements","Rendering Cleggmania","Squeezing vertexes","Simulating alcohol input","Sequencing regrets"];
 
     $("#result").hide();
-    $('#pr1').hide();
-    $('#pr2').hide();
-    $('#pr3').hide();
-    $('#pr4').hide();
     
 
     function fade(j,time) {
@@ -20,6 +16,7 @@ $(document).ajaxComplete(function(){
     i = 1;
     while (i < 5)
         {
+        $('#pr' + i).hide();
         index = Math.floor(Math.random() * progresstypes.length);
         $("#text" + i).text(progresstypes.splice(index,1));
         
