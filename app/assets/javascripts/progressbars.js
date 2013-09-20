@@ -12,7 +12,7 @@ $(document).ajaxComplete(function(){
     },time * (j-1))
          
     }
-    timing = 1800;
+    timing = 1900;
     i = 1;
     while (i < 5)
         {
