@@ -3,7 +3,7 @@
 
   <%= form_tag("/checkuser", method: "get", class: "form-inline", remote: true) do %>
   <h4>
-    Is @<%= text_field_tag(:q,'',class: "namebox", placeholder: @user_check.name || "some twitter account") %>
+    Is @<%= text_field_tag(:q,'',class: "namebox", placeholder: @user_check.name || "username") %>
     <a href="http://www.twitter.com/edjeff/">@edjeff</a>?
     </h4>
     <%= button_tag("Check", name:nil, class:"btn-lg btn-primary")  %>
