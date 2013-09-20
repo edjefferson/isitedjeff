@@ -6,14 +6,10 @@
 {
 width: 10em;
 }
-.ui-progressbar {
+
+.progress {
     position: relative;
-    width: 10em;
+    height: 50px;
+    width: 60%;
+    left: 20%;
   }
-.progress-label {
-  position: absolute;
-  top: 4px;
-  font-weight: bold;
-  text-shadow: 1px 1px 0 #fff;
-  text-align:center;
-}

@@ -2,11 +2,11 @@
 <div class="container-fluid">
 
   <%= form_tag("/checkuser", method: "get", class: "form-inline", remote: true) do %>
-  <h3>
+  <h4>
     Is @<%= text_field_tag(:q,'',class: "namebox", placeholder: @user_check.name || "some twitter account") %>
     <a href="http://www.twitter.com/edjeff/">@edjeff</a>?
-    </h3>
-    <%= button_tag("Check", name:nil, class:"btn-large btn-primary")  %>
+    </h4>
+    <%= button_tag("Check", name:nil, class:"btn-lg btn-primary")  %>
 
   <% end %>
   <div id ="user_check">
