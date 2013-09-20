@@ -1,5 +1,5 @@
 $(document).ajaxComplete(function(){
-    var progresstypes=["Calculating average noun sentiment","Deriving cultural reference points","Approximating Myers-Briggs Type","Reticulating splines","Partitioning hashtags","Applying colloquial filters","Assaying content","Dissecting social network pathways","Folding retweets","Segmenting pork statements","Rendering Cleggmania","Squeezing vertexes","Simulating alcoholic input","Sequencing regrets"];
+    var progresstypes=["Calculating average noun sentiment","Deriving cultural reference points","Approximating Myers-Briggs Type","Reticulating splines","Partitioning hashtags","Applying colloquial filters","Assaying content","Dissecting social network pathways","Folding retweets","Segmenting pork statements","Rendering Cleggmania","Squeezing vertexes","Simulating alcohol input","Sequencing regrets"];
 
     $("#result").hide();
     $('#pr2').hide();
@@ -15,7 +15,7 @@ $(document).ajaxComplete(function(){
         }
     
    
-    var timing = 1500
+    var timing = 1200
 
 
     $('#bar1').animate({width: "100%"},timing, "swing", function(){

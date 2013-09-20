@@ -8,8 +8,18 @@ width: 10em;
 }
 
 .progress {
-    position: relative;
+  
     height: 25px;
-    width: 60%;
-    left: 20%;
+    
   }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 500px; /* or 950px */
+}
+
+#legal {
+  
+  color: grey;
+}

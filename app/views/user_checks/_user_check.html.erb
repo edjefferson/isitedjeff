@@ -43,11 +43,23 @@
     <h2>Unlikely.</h2>
     <p>
     There is a less than
+  <% elsif @user_check.name == "edjeff"%>
+    <h2>I mean, obviously.</h2>
+    <p>
+    There is a 
+    <% elsif @user_check.score == "0"%>
+    <h2>Definitely not.</h2>
+    <p>
+    There is a 
   <% else %>
     <h2>Probably.</h2>
     <p>
     There is a 
   <% end %>
   <%= @user_check.score %>% chance that <a href="http://www.twitter.com/<%= @user_check.name %>">@<%= @user_check.name %></a> is <a href="http://www.twitter.com/edjeff/">@edjeff</a>.</p>
+
+  <br />
+  <div id="legal" class="text-left"><small>
+  <strong>Legal disclaimer:</strong> The @edjeff Twitter account detector is provided for entertainment purposes only and may not represent reality, or anything close to it. Your @edjeff may be at risk if you do not keep up payments on your @edjeff.</small>
   </div>
 <% end %>
