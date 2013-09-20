@@ -47,7 +47,7 @@
     <h2>I mean, obviously.</h2>
     <p>
     There is a 
-    <% elsif @user_check.score == "0"%>
+    <% elsif @user_check.score == "0.0"%>
     <h2>Definitely not.</h2>
     <p>
     There is a 
@@ -56,7 +56,7 @@
     <p>
     There is a 
   <% end %>
-  <%= @user_check.score %>% chance that <a href="http://www.twitter.com/<%= @user_check.name %>">@<%= @user_check.name %></a> is <a href="http://www.twitter.com/edjeff/">@edjeff</a>.</p>
+  <%= @user_check.score.gsub(".0","") %>% chance that <a href="http://www.twitter.com/<%= @user_check.name %>">@<%= @user_check.name %></a> is <a href="http://www.twitter.com/edjeff/">@edjeff</a>.</p>
 
   <br />
   <div id="legal" class="text-left"><small>
