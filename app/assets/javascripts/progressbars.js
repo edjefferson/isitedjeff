@@ -6,7 +6,8 @@ $(document).ajaxComplete(function(){
     
     $('#bar2').animate({width: "100%"},600, "linear");
 
-    setTimeout($("#result").show(), 10000);
+    function show_result () {$("#result").show();}
+    setTimeout(show_result, 2000);
 
   });
 
