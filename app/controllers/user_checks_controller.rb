@@ -11,9 +11,10 @@ class UserChecksController < ApplicationController
     @user_check = UserCheck.where(name: name_to_check.downcase).first_or_create
     if @user_check.score == nil
       @user_check.score = ((0..15).to_a.sample.to_s + "." + (0..9).to_a.sample.to_s).to_f
-      @user_check.save
+      
     end
     @user_check.check_count += 1
+    @user_check.save
 
     respond_to do |format|
       format.html
