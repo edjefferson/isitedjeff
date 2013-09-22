@@ -1,7 +1,4 @@
-
-<div class="container-fluid">
-
-  <%= form_tag("/checkuser", method: "get", class: "form-inline", remote: true) do %>
+<%= form_tag("/checkuser", method: "get", class: "form-inline", remote: true) do %>
   <h4>
     Is @<%= text_field_tag(:q,'',class: "namebox", placeholder: @user_check.name || "username") %>
     <a href="http://www.twitter.com/edjeff/">@edjeff</a>?
@@ -12,6 +9,3 @@
   <div id ="user_check">
     <%= render @user_check %>
   </div>
-
-
-</div>

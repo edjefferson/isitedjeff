@@ -1,6 +1,8 @@
 class UserChecksController < ApplicationController
 
-
+  def index
+    @user_checks = UserCheck.all
+  end
 
   def search
     name_to_check = params[:q] || ""

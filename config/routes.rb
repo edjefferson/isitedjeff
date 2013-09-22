@@ -2,6 +2,7 @@ Isitedjeff::Application.routes.draw do
   resources :user_checks
   root 'user_checks#search'
   get 'checkuser' => 'user_checks#search'
+  get 'list' => 'user_checks#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
