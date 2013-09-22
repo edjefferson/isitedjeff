@@ -1,0 +1,20 @@
+<h2>Previous Checks</h2>
+
+<div class="text-left">
+<table class ="table">
+  
+  <tr>
+  <th>Name</th>
+  <th>Count</th>
+  <th>Score</th>
+</tr>
+<% @user_checks.each do |user_check| %>
+<tr>
+  <td><%= user_check.name %></td>
+  <td><%= user_check.check_count %></td>
+  <td><%= user_check.score %></td>
+</tr>
+<% end %>
+
+</table>
+</div>
