@@ -4,9 +4,9 @@
 <table class ="table">
   
   <tr>
-  <th>Name</th>
-  <th>Count</th>
-  <th>Score</th>
+  <th><%= sortable "name" %></th>
+  <th><%= sortable "check_count" %></th>
+  <th><%= sortable "score" %></th>
 </tr>
 <% @user_checks.each do |user_check| %>
 <tr>
