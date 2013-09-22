@@ -4,6 +4,11 @@ class UserChecksController < ApplicationController
     @user_checks = UserCheck.all
   end
 
+  def robots                                                                                                                                      
+    robots = File.read(Rails.root + "config/robots.#{Rails.env}.txt")
+    render :text => robots, :layout => false, :content_type => "text/plain"
+  end
+  
   def search
     name_to_check = params[:q] || ""
     if name_to_check[0] == "@"
