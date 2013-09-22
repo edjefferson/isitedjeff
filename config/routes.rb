@@ -1,8 +1,10 @@
 Isitedjeff::Application.routes.draw do
-  resources :user_checks
+  resources :user_checks, :path => 'list'
   root 'user_checks#search'
   get 'checkuser' => 'user_checks#search'
   get 'list' => 'user_checks#index'
+  
+
   get '/robots.txt' => 'user_checks#robots'
 
   # The priority is based upon order of creation: first created -> highest priority.
