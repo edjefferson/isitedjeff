@@ -4,12 +4,15 @@
 <table class ="table">
   
   <tr>
+  <th><%= sortable "id" %></th>
+
   <th><%= sortable "name" %></th>
   <th><%= sortable "check_count" %></th>
   <th><%= sortable "score" %></th>
 </tr>
 <% @user_checks.each do |user_check| %>
 <tr>
+  <td><%= user_check.id %></td>
   <td><%= user_check.name %></td>
   <td><%= user_check.check_count %></td>
   <td><%= user_check.score %></td>
