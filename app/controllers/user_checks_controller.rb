@@ -22,7 +22,7 @@ class UserChecksController < ApplicationController
 
       @user_check = UserCheck.where(name: name_to_check.downcase).first_or_create
       if @user_check.score == nil
-        @user_check.score = ((0..159).to_a.sample)/10
+        @user_check.score = ((0..159).to_a.sample.to_f)/10
         
       end
       @user_check.check_count += 1
