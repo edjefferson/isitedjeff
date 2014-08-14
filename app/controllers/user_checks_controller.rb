@@ -15,7 +15,7 @@ class UserChecksController < ApplicationController
 
   def search
     if params[:q]
-      name_to_check = params[:q]
+      name_to_check = params[:q].strip
       if name_to_check[0] == "@"
         name_to_check = name_to_check[1..-1]
       end
